@@ -6,11 +6,14 @@ return "INVALID".
 */
 
 // Your code here 
+let isValidSubStr = (str1, str2) => {
+    return str1.toLowerCase().includes(str2.toLowerCase()) ? 'VALID' : 'INVALID';
+}
 
-// console.log(isValidSubStr("JOY", "joy"));                     // => 'VALID'
-// console.log(isValidSubStr("The cat jumped!", "he cat jump")); // => 'VALID'
-// console.log(isValidSubStr("Time to program", "time"));        // => 'VALID'
-// console.log(isValidSubStr("happy", "happiness"));             // => 'INVALID'
+console.log(isValidSubStr("JOY", "joy"));                     // => 'VALID'
+console.log(isValidSubStr("The cat jumped!", "he cat jump")); // => 'VALID'
+console.log(isValidSubStr("Time to program", "time"));        // => 'VALID'      
+console.log(isValidSubStr("happy", "happiness"));             // => 'INVALID'
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = isValidSubStr;
